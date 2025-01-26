@@ -57,7 +57,7 @@
     const material = new THREE.MeshPhongMaterial({
       vertexColors: THREE.VertexColors,
       transparent: true,
-      opacity: 0.6,
+      opacity: 0.75,
       side: THREE.DoubleSide
     });
 
@@ -110,8 +110,8 @@
       prevX = clientX;
       prevY = clientY;
 
-      rotateY += deltaX * 0.005;
-      rotateX -= deltaY * 0.005;
+      rotateY += deltaX * 0.0002;
+      rotateX -= deltaY * 0.0002;
     }
 
     function handleEnd() {
